@@ -39,6 +39,8 @@ services:
       - dbdata:/var/lib/mysql
     networks:
       - laravel
+    ports:
+      - "3308:3306"
 
   redis:
     image: redis:alpine
